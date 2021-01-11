@@ -1,0 +1,20 @@
+.avatar-wrapper img {
+  width: 130px;
+}
+
+.highlighted {
+  cursor: inherit;
+}
+main:nth-last-child(3) {
+  margin-bottom: 0;
+}
+.tags.small {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 1200px) {
+  main article {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
