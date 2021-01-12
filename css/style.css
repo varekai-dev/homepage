@@ -1,11 +1,8 @@
-<<<<<<< Updated upstream
-.avatar-wrapper img {
-  width: 130px;
-=======
 .avatar-wrapper {
   width: 110px;
   margin: 0 auto;
->>>>>>> Stashed changes
+  position: relative;
+  overflow: hidden;
 }
 .avatar-main img {
   width: 110px;
@@ -15,7 +12,7 @@
 
 .avatar-wrapper::before {
   position: absolute;
-  content: "123";
+  content: "";
   background-color: #00d487;
   border-radius: 50%;
   left: 8px;
@@ -77,6 +74,18 @@ main:nth-last-child(3) {
 .tags.small {
   text-transform: uppercase;
 }
+.avatar-wrapper:hover .sunglesses {
+  transform: rotate(0deg) translate3d(0%, 0%, 0);
+  transform-origin: bottom right;
+}
+.sunglesses {
+  transform: rotate(90deg) translate3d(50%, 150%, 0);
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  width: 60px;
+  top: 18%;
+  left: 24%;
+}
 .main {
   position: relative;
 }
@@ -115,8 +124,6 @@ main:nth-last-child(3) {
   background: white;
   text-decoration: none;
 }
-<<<<<<< Updated upstream
-=======
 
 .lang p a,
 .lang p span {
@@ -127,7 +134,6 @@ main:nth-last-child(3) {
 .flag {
   height: 10px;
 }
->>>>>>> Stashed changes
 
 @media only screen and (min-width: 1200px) {
   main article {
