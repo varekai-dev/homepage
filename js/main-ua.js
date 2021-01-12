@@ -5,9 +5,9 @@ const text = document.getElementById("text")
 
 const toogleMode = () => {
   if(darkness.classList.contains('on')){
-    text.innerHTML="Dark times"
+    text.innerHTML="Темні часи"
   } else{
-    text.innerHTML="Turn on  light"
+    text.innerHTML="Запалити світло"
   }
   
   darkness.classList.toggle('on')

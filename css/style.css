@@ -1,9 +1,13 @@
-.avatar-wrapper img {
-  width: 130px;
+.avatar {
+  width: 110px;
+}
+.avatar-wrapper {
+  width: 110px;
+  margin: 0 auto;
 }
 
 .highlighted {
-  cursor: inherit;
+  cursor: unset;
 }
 main:nth-last-child(3) {
   margin-bottom: 0;
@@ -14,6 +18,24 @@ main:nth-last-child(3) {
 .main {
   position: relative;
 }
+.avatar-wrapper {
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+}
+.avatar-wrapper:hover .sunglesses {
+  transform: rotate(0deg) translate3d(0%, 0%, 0);
+  transform-origin: bottom right;
+}
+.sunglesses {
+  transform: rotate(90deg) translate3d(50%, 150%, 0);
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  width: 60px;
+  top: 18%;
+  left: 24%;
+}
+
 .dark-mode {
   transition: all 0.3s;
   opacity: 0;
@@ -48,6 +70,14 @@ main:nth-last-child(3) {
   color: black;
   background: white;
   text-decoration: none;
+}
+.lang p a,
+.lang p span {
+  margin-right: 10px;
+}
+
+.flag {
+  height: 10px;
 }
 
 @media only screen and (min-width: 1200px) {
