@@ -1,16 +1,18 @@
 
+<<<<<<< Updated upstream
  const text = document.getElementById("text")
  const darkness = document.getElementById('dark')
+=======
 
-const toogleMode = () => {
-  if(darkness.classList.contains('on')){
-    text.innerHTML="Dark times"
-  } else{
-    text.innerHTML="Turn on  light"
-  }
+const text = document.getElementById("text")
+ const main = document.querySelector('.main')
+>>>>>>> Stashed changes
+
+const darkMode = () =>{
+  main.classList.toggle('dark') 
   
-  darkness.classList.toggle('on')
-  text.classList.toggle('light')
 }
 
- text.addEventListener('click', toogleMode)
+
+
+ text.addEventListener('click', darkMode)

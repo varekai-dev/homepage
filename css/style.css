@@ -1,5 +1,71 @@
+<<<<<<< Updated upstream
 .avatar-wrapper img {
   width: 130px;
+=======
+.avatar-wrapper {
+  width: 110px;
+  margin: 0 auto;
+>>>>>>> Stashed changes
+}
+.avatar-main img {
+  width: 110px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.avatar-wrapper::before {
+  position: absolute;
+  content: "123";
+  background-color: #00d487;
+  border-radius: 50%;
+  left: 8px;
+  right: 8px;
+  top: 19px;
+  bottom: 4px;
+}
+.main.dark {
+  background: #2f2b2b;
+}
+.main.dark .avatar-wrapper::before {
+  background-color: #0377a3;
+}
+.main.dark .article {
+  color: rgb(220 205 205 / 87%);
+}
+.main.dark .article a {
+  color: #c6cc0e;
+}
+.main.dark .divider.fat {
+  border-top: 0.3571428571428571em solid rgb(220 205 205 / 87%);
+  width: 33%;
+}
+
+.main.dark li.highlighted {
+  background: rgb(0 0 0 / 26%);
+}
+.page {
+  border-color: #03a36c;
+}
+.page::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 2em;
+  top: 2em;
+  right: 2em;
+  bottom: 2em;
+  border-color: #03a36c;
+  border-width: 1em;
+  border-style: solid;
+  pointer-events: none;
+  transition: border-color 0.2s ease-in-out;
+}
+.main.dark .page {
+  background: #464343;
+  box-shadow: 0 10px 100px 0 rgb(255 149 149 / 10%);
+}
+.main.dark .page:before {
+  border-color: #0377a3;
 }
 
 .highlighted {
@@ -49,10 +115,33 @@ main:nth-last-child(3) {
   background: white;
   text-decoration: none;
 }
+<<<<<<< Updated upstream
+=======
+
+.lang p a,
+.lang p span {
+  line-height: 25px;
+  margin-right: 10px;
+}
+
+.flag {
+  height: 10px;
+}
+>>>>>>> Stashed changes
 
 @media only screen and (min-width: 1200px) {
   main article {
     margin-top: 200px;
     margin-bottom: 200px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .page,
+  .page::before {
+    padding: 0;
+  }
+  .page::before {
+    display: none;
   }
 }
