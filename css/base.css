@@ -3,6 +3,7 @@
 }
 ::selection {
   background: yellow;
+  color: black;
 }
 *,
 *:before,
@@ -265,10 +266,10 @@ article {
   box-shadow: 0 10px 100px 0 rgba(34, 36, 38, 0.1);
   transition: box-shadow 0.2s linear;
 }
-.page[style^="border-color"] {
+.page {
   padding: 4.5em;
 }
-.page[style^="border-color"]:before {
+.page:before {
   content: " ";
   display: block;
   position: absolute;
@@ -289,10 +290,10 @@ article {
 }
 @media only screen and (max-width: 767px) {
   .page,
-  .page[style^="border-color"] {
+  .page::before {
     padding: 0;
   }
-  .page[style^="border-color"]:before {
+  .page::before {
     display: none;
   }
 }
